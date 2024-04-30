@@ -78,3 +78,5 @@ E. student.courseLoad[0]
 15. Difference between == and === operators:
     - The == operator checks for equality after type coercion, which means that the values being compared are converted to a common type before comparison.
     - The === operator checks for strict equality without type coercion, meaning that the operands must be of the same type and have the same value for the comparison to result in true.
+17.
+19.
