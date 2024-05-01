@@ -80,6 +80,6 @@
     - The === operator checks for strict equality without type coercion, meaning that the operands must be of the same type and have the same value for the comparison to result in true.
 17.
 19.
-1
-4
-3
+    1
+    4
+    3
