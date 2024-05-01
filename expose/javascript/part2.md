@@ -17,68 +17,38 @@
     E. student.courseLoad[0]
 13. Arithmetic:
 
-    - '3' + 2
-        Output: '32'
-        Explanation: When '+' is used with a string and a number, the number gets coerced into a string and then both strings are concatenated.
+    - '3' + 2 -> '32', When '+' is used with a string and a number, the number gets coerced into a string and then both strings are concatenated.
 
-    - '3' - 2
-        Output: 1
-        Explanation: The '-' operator triggers type coercion and converts the string '3' into a number.
+    - '3' - 2 -> 1, The '-' operator triggers type coercion and converts the string '3' into a number.
 
-    - 3 + null
-        Output: 3
-        Explanation: Null is converted to 0 in arithmetic operations.
+    - 3 + null -> 3, Null is converted to 0 in arithmetic operations.
 
-    - '3' + null
-        Output: '3null'
-        Explanation: Similar to the first case, '3' is a string and null is coerced into a string and then concatenated.
+    - '3' + null -> '3null', Similar to first case, '3' is a string and null is coerced into a string and then concatenated.
 
-    - true + 3
-        Output: 4
-        Explanation: true is coerced into 1 in arithmetic operations.
+    - true + 3 -> 4, true is coerced into 1 in arithmetic operations.
 
-    - false + null
-        Output: 0
-        Explanation: false is coerced into 0 in arithmetic operations, and null is also converted to 0.
+    - false + null -> 0, false is coerced into 0 in arithmetic operations, and null is also converted to 0.
 
-    - '3' + undefined
-        Output: '3undefined'
-        Explanation: undefined is converted to a string 'undefined' and concatenated with '3'.
+    - '3' + undefined -> '3undefined', undefined is converted to a string 'undefined' and concatenated with '3'.
 
-    - '3' - undefined
-        Output: NaN
-        Explanation: Undefined cannot be converted to a number, so the operation results in NaN (Not a Number).
+    - '3' - undefined -> NaN, Undefined cannot be converted to a number, so the operation results in NaN (Not a Number).
 
 14. Comparison:
 
-    - '2' > 1
-        Output: true
-        Explanation: '2' is converted to a number and compared with 1.
+    - '2' > 1 -> true, '2' is converted to a number and compared with 1.
 
-    - '2' < '12'
-        Output: false
-        Explanation: As strings, '2' is greater than '1' lexically, resulting in false.
+    - '2' < '12' -> false, As strings, '2' is greater than '1' lexically, resulting in false.
 
-    - 2 == '2'
-        Output: true
-        Explanation: The == operator coerces the operands to the same type before comparing.
+    - 2 == '2' -> true, The == operator coerces the operands to the same type before comparing.
 
-    - 2 === '2'
-        Output: false
-        Explanation: The === operator does not perform type coercion, so the comparison of a number and a string results in false.
+    - 2 === '2' -> false, The === operator does not perform type coercion, so the comparison of a number and a string results in false.
 
-    - true == 2
-        Output: false
-        Explanation: The boolean value true is coerced into a number (1) before comparison, resulting in false.
+    - true == 2 -> false, The boolean value true is coerced into a number (1) before comparison, resulting in false.
 
-    - true === Boolean(2)
-        Output: false
-        Explanation: The boolean value true is not the same as the Boolean object created with 2 as a value.
+    - true === Boolean(2) -> false, The boolean value true is not the same as the Boolean object created with 2 as a value.
 
-15. Difference between == and === operators:
-    - The == operator checks for equality after type coercion, which means that the values being compared are converted to a common type before comparison.
-    - The === operator checks for strict equality without type coercion, meaning that the operands must be of the same type and have the same value for the comparison to result in true.
-17. The result will be [2,4,6].
+15. == checks for equality after type coercion, which means that values being compared are converted to a common type before comparison. === checks for strict equality without type coercion, meaning that operands must be of the same type and have the same value for comparison to result in true.
+17. Result will be [2,4,6].
 modifyArray function takes in array [1,2,3] and callback function doSomething, iterates through each element in the array [1,2,3]. For each element, it calls the callback function doSomething with the element as an argument. doSomething function multiplies the number by 2, and callback function will return [2,4,6]. These values are then pushed into a new array newArr. modifyArray function then returns new array, which is [2,4,6].
 19.
     1
