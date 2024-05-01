@@ -1,14 +1,14 @@
-1. 3
-2. 150
-3. 150
-4.
-5.
+1. print out length based on i, 3
+2. print discounted price which is the final price which is discounted price of last element in array, 150
+3. print final price which is discounted price of last element in array, 150
+4. return nothing because of empty array
+5. ReferenceError: i is not defined
 6. ReferenceError: discountedPrice is not defined
-7. 150
-8.
+7. print final price which is discounted price of last element in array, 150
+8. return nothing because of empty array
 9. ReferenceError: i is not defined
-10. 3
-11. 
+10. print out length based on array length, 33
+11. return nothing because of empty array
 12.
     A. student.name
     B. student['Grad Year']
@@ -78,7 +78,8 @@
 15. Difference between == and === operators:
     - The == operator checks for equality after type coercion, which means that the values being compared are converted to a common type before comparison.
     - The === operator checks for strict equality without type coercion, meaning that the operands must be of the same type and have the same value for the comparison to result in true.
-17.
+17. The result will be [2,4,6].
+modifyArray function takes in array [1,2,3] and callback function doSomething, iterates through each element in the array [1,2,3]. For each element, it calls the callback function doSomething with the element as an argument. doSomething function multiplies the number by 2, and callback function will return [2,4,6]. These values are then pushed into a new array newArr. modifyArray function then returns new array, which is [2,4,6].
 19.
     1
     4
